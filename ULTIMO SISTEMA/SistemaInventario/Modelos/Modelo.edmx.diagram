@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eab3474847364b579f99708038942e6c" Name="Diagram1">
+        <EntityTypeShape EntityType="ventasModel.Categorias" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Clientes" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Compras" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.ComprasDetalle" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.ComprasPago" Width="1.5" PointX="5.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Configuracion" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.MetodosPago" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Monedas" Width="1.5" PointX="3" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Productos" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Proveedores" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Stock" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.UnidadesMedidas" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Usuarios" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.UsuariosPermisos" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.Ventas" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.VentasDetalle" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ventasModel.VentasPago" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <AssociationConnector Association="ventasModel.FK_Productos_Categorias" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Ventas_Clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Compras_Proveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Compras_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_ComprasDetalle_Compras" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_ComprasPago_Compras" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_ComprasDetalle_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_ComprasPago_MetodosPago" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_ComprasPago_Monedas" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_VentasPago_MetodosPago" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_VentasPago_Monedas" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Productos_UnidadesMedidas" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Stock_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_VentasDetalle_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_UsuariosPermisos_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_Ventas_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_VentasDetalle_Ventas" ManuallyRouted="false" />
+        <AssociationConnector Association="ventasModel.FK_VentasPago_Ventas" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
